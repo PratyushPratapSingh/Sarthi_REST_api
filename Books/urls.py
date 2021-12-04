@@ -24,8 +24,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^api/$', BookList.as_view(), name=''),
-    url(r'^api/book_list/(?P<book_id>\d+)/$', BookDetail.as_view(), name='book_list'),
+    url(r'^api/$', BookList.as_view(), name='api'),
+    url(r'^api/(?P<book_id>\d+)/$', BookDetail.as_view(), name='api'),
     path('books/', include('sarthi.urls')),
     path('', views.index, name='Home'),
 

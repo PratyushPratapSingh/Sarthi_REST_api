@@ -1,6 +1,10 @@
 # sarthi_rest_api
 Sarthi.ai assignment to develop a book api with CRUD operation using Django framework
 
+
+Name - PRATYUSH PRATAP SINGH
+EMAIL - PRATYUSHPRATAPSINGH11@GMAIL.COM
+
 Download link -  https://github.com/PratyushPratapSingh/sarthi_rest_api.git
 
 Pay special attention for isbn of books because it shoud be uniquely defined not every 3 digit with 10 digit separated is isbn number.
@@ -9,9 +13,9 @@ Pay special attention for isbn of books because it shoud be uniquely defined not
 
 2.  To check the api visit my hosted book-api on Heroku - https://sarthibookapi.herokuapp.com
 
-3.  After visit the site add "  '/api/' to  the existing URL" check the working 
+3.  After visit the site add "  '/api/' to  the existing URL" to check the working 
 
-4.  for different condition as mention my project not exactly the same detto 
+4.  For different condition as mentioned my project not exactly the same detto but follows the same condition as mention in the question
 
 5.  you can check this api for different book id like adding "/api/1"   or "/api/2" depending on the inserted books if book is not available it shows we can't found book with id "4" because I have inserted only two books
 
@@ -19,12 +23,7 @@ Pay special attention for isbn of books because it shoud be uniquely defined not
 
 7. On testing on local machine please install the specific version of the libraries to work smoothly because some of the latest one is not work properly like in my case waitress==2.0.0 is not working but waitress==1.4.4 is working smoothly
 
-
-
-
-
-
-
+8.  Special attention if you want to update some book you have to enter all details however I can change using either in models view or in api view but in this project you have to enter all fields to update field and offcourse pay special attention for "isbn" field while inserting because all 13 digit numbers are not isbn which bother me a lot while creating this field however I have used extra library to use isbn number.
 
 
 

@@ -14,14 +14,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf.urls import url
+from django.conf import settings
+from django.conf.urls.static import static
 
 from sarthi.api import BookList, BookDetail
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^api/book_list/$', BookList.as_view(), name='book_list'),
+    url(r'^api/$', BookList.as_view(), name=''),
     url(r'^api/book_list/(?P<book_id>\d+)/$', BookDetail.as_view(), name='book_list'),
+    path('books/', include('sarthi.urls')),
+    path('', views.index, name='Home'),
 
 ]

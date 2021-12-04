@@ -1,7 +1,7 @@
 # sarthi_rest_api
 Sarthi.ai assignment to develop a book api with CRUD operation using Django framework
 
-Download link -
+Download link -  https://github.com/PratyushPratapSingh/sarthi_rest_api.git
 
 Pay special attention for isbn of books because it shoud be uniquely defined not every 3 digit with 10 digit separated is isbn number.
 
